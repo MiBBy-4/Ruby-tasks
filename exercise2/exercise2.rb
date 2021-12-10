@@ -1,7 +1,7 @@
 #0,1,1,2,3,5,8,13,21,.. <4000000
 
 def fib
-    first_elem, second_elem = 0, 1 #начальные элементы для сложения
+    first_elem, second_elem = 0, 1 # начальные элементы для сложения
     fib_sequence = []
 
     while first_elem < 4000000 # пока наш первый элемент
