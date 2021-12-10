@@ -1,9 +1,12 @@
+MinNumber = 1
+MaxNumber = 100
+
 def sum_of_squares
-  (1..100).reduce(0) {|sum, number| sum+=number**2}
+  (MinNumber..MaxNumber).reduce(0) { |sum, number| sum+=number**2 }
 end
 
 def square_of_sum
-  (1..100).reduce(0) {|sum, number| sum+=number}**2
+  (MinNumber..MaxNumber).reduce(0) { |sum, number| sum+=number }**2
 end
 
 def difference
