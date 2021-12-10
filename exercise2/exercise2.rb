@@ -16,8 +16,8 @@ def sum_of_even_fib
   fib_sequence = fib
 
   fib_sequence.reduce(0) {|sum, number| 
-      sum += number if number.even?
-      sum
+    sum += number if number.even?
+    sum
   }
 end
 
