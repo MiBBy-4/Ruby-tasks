@@ -1,8 +1,9 @@
 require 'prime'
 
+Number = 13195
+
 def prime_factors
-  number = 13195
-  Prime.each(number).select { |n| number % n == 0 }
+  Prime.each(Number).select { |n| Number % n == 0 }
 end
 
 def largest_of_factors
