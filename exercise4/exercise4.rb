@@ -7,7 +7,7 @@ def find_palindroms
 end
 
 def find_largest_palindrom
-  palindrom = find_palindroms.max
+  find_palindroms.max
 end
 
 print find_largest_palindrom
