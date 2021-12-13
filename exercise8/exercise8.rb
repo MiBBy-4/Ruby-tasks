@@ -9,8 +9,7 @@ def greatest_product
   result = 1 # temp variable, where we will store our product to compare it
 
   (0..999).each do |index| # we have 1000 digits in our array and we need to iterate them all. So, index is our value
-    product = (0..12).reduce(1) do # we need to product all values from our value to the thirteenth
-      |prod, step|
+    product = (0..12).reduce(1) do |prod, step| # we need to product all values from our value to the thirteenth
       prod = prod * array[index+step].to_i
     end
     result = product if product > result # put our product to the temp variable if it's more than temp  
