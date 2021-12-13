@@ -17,10 +17,10 @@ end
 def sum_of_even_fib
   fib_sequence = fib
 
-  fib_sequence.reduce(0) { |sum, number| 
+  fib_sequence.reduce(0) do |sum, number| 
     sum += number if number.even?
     sum
-  }
+  end
 end
 
 puts sum_of_even_fib
