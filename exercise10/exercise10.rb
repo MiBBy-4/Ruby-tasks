@@ -1,10 +1,10 @@
 require 'prime'
 
-Number = 2000000
+NUMBER = 2000000
 
 def primes
   array_of_primes = []
-  Prime.each(Number) {|prime| array_of_primes << prime}
+  Prime.each(NUMBER) { |prime| array_of_primes << prime }
   array_of_primes
 end
 
