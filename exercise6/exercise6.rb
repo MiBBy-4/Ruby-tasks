@@ -10,7 +10,7 @@ def square_of_sum
 end
 
 def difference
-  result = square_of_sum - sum_of_squares
+  square_of_sum - sum_of_squares
 end
 
 puts difference
