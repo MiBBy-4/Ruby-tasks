@@ -10,7 +10,7 @@ end
 
 def sum_of_primes
   array_of_primes = primes
-  array_of_primes.reduce(0) do |sum,prime|
+  array_of_primes.reduce(0) do |sum, prime|
     sum += prime
     sum
   end
