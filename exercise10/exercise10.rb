@@ -4,7 +4,10 @@ NUMBER = 2000000
 
 def primes
   array_of_primes = []
-  Prime.each(NUMBER) { |prime| array_of_primes << prime }
+  Prime.map do |prime| 
+    array_of_primes << prime 
+    break if prime >= NUMBER
+  end
   array_of_primes
 end
 
